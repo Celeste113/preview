@@ -1,0 +1,10 @@
+/**index.wxss**/
+.page{
+  width:80%;
+  margin:0 auto;
+  margin-top:80rpx;
+}
+.van-cell{
+  padding:30rpx 0 !important;
+  font-size:30rpx !important;
+}

@@ -1,0 +1,10 @@
+<view class="bannerList">
+<view class="title"> 中间大两边小banner </view>
+  <swiper  autoplay interval="{{interval}}" circular previous-margin="{{leftMargin}}" next-margin="{{rightMargin}}" bindchange="handleChange">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image {{currentIndex == index ? 'active': ''}}"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

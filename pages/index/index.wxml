@@ -1,0 +1,5 @@
+<view class="page">
+  <van-cell-group>
+    <van-cell title="banner新玩法" is-link url="/pages/banner/banner" />
+  </van-cell-group>
+</view>
