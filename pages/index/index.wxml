@@ -1,5 +1,6 @@
 <view class="page">
   <van-cell-group>
     <van-cell title="banner新玩法" is-link url="/pages/banner/banner" />
+    <van-cell title="movable-area" is-link url="/pages/movableArea/movableArea" />
   </van-cell-group>
 </view>

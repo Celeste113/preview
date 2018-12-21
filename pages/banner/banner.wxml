@@ -1,10 +1,22 @@
 <view class="bannerList">
-<view class="title"> 中间大两边小banner </view>
-  <swiper  autoplay interval="{{interval}}" circular previous-margin="{{leftMargin}}" next-margin="{{rightMargin}}" bindchange="handleChange">
-    <block wx:for="{{imgUrls}}">
-      <swiper-item>
-        <image src="{{item}}" class="slide-image {{currentIndex == index ? 'active': ''}}"/>
-      </swiper-item>
-    </block>
-  </swiper>
+  <view class="item">
+    <view class="title"> 中间大两边小banner </view>
+    <swiper autoplay interval="{{interval}}" circular previous-margin="{{leftMargin}}" next-margin="{{rightMargin}}" bindchange="handleChange">
+      <block wx:for="{{imgUrls}}" wx:key="keys">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image {{currentIndex == index ? 'active': ''}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="item">
+    <view class="title"> 竖向多滑块 </view>
+    <swiper interval="{{interval}}" circular vertical autoplay class="vertical-swiper" display-multiple-items='2' >
+      <block wx:for="{{4}}" wx:key='keys'>
+        <swiper-item>
+          <van-cell title="网易" value="2018-12-20" label="评价内容" border="{{ true }}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
 </view>

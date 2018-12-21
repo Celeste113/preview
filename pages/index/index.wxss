@@ -1,10 +1,19 @@
 /**index.wxss**/
-.page{
-  width:80%;
-  margin:0 auto;
-  margin-top:80rpx;
+
+page {
+  background: #f2f2f2;
 }
-.van-cell{
-  padding:30rpx 0 !important;
-  font-size:30rpx !important;
+
+.page {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 80rpx;
+  box-shadow: 3rpx 4rpx 10rpx #888888;
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+
+.van-cell {
+  padding: 30rpx 30rpx !important;
+  font-size: 32rpx !important;
 }

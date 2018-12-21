@@ -7,10 +7,11 @@ Page({
     ],
     interval: 5000,
     duration: 1000,
-    circular:true,
-    leftMargin:'80rpx',
-    rightMargin:'80rpx',
-    currentIndex:0
+    circular: true,
+    leftMargin: '80rpx',
+    rightMargin: '80rpx',
+    currentIndex: 0,
+    interval2: '2000'
   },
   handleChange: function (e) {
     this.setData({
