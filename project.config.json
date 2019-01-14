@@ -30,13 +30,36 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 2,
+			"list": [
+				{
+					"id": 0,
+					"name": "卡片切换",
+					"pathName": "pages/card/card",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "banner 新玩法",
+					"pathName": "pages/banner/banner",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "newCard",
+					"pathName": "pages/newCard/newCard",
+					"query": ""
+				}
+			]
 		}
 	}
 }

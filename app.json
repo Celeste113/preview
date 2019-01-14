@@ -4,7 +4,9 @@
     "pages/banner/banner",
     "pages/logs/logs",
     "pages/movableArea/movableArea",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/card/card",
+    "pages/newCard/newCard"
   ],
   "window": {
     "backgroundTextStyle": "light",

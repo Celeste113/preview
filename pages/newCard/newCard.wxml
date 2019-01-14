@@ -1,0 +1,80 @@
+<view id="index">
+  <!-- 通告栏 -->
+  <van-notice-bar mode="closeable" left-icon="/images/addImage.png" text="恭喜 微信昵称 赢取￥8.88春节红包" backgroundColor="#fff" color="#2d2e30" custom-class="my-notice-bar" />
+
+  <!-- 我要上首页 -->
+  <view class="action-btn clearfloat">
+    <view class="btn-group">
+      <text>我要上首页</text> |
+      <text>分享</text>
+    </view>
+  </view>
+
+  <!-- 卡片 -->
+  <view class="bannerList">
+    <swiper class="bannerbox" interval="{{interval}}" circular >
+        <swiper-item class="slide-image" bindtap="navTo">
+          <image src="https://xcj.chaojichoujiang.com/Uploads/chunjie/sliderbg.png" />
+        </swiper-item>
+        <!-- 春节红包 -->
+        <block wx:for="{{list}}" wx:key='keys'>
+        <swiper-item class="red-packet"  data-id="{{item.id}}" bindtap="getDetail">
+          <view class="packet-image">
+            <image src="{{item.pic_url}}" />
+          </view>
+          <view class="packet-info">
+            <view class="packet-name">{{item.type==1?'猜成语赢红包':'猜数字赢红包'}}</view>
+            <text class="sponsor">纽麦得 赞助</text>
+            <view class="info">
+              <view>
+                <text>开始时间</text>
+                <text>{{item.startTime}}</text>
+              </view>
+              <view>
+                <text>红包数量</text>
+                <text>{{item.red_number}} 个</text>
+              </view>
+              <!-- <view> -->
+              <!-- <text>参与条件</text> -->
+              <!-- <text>春节红包</text> -->
+              <!-- </view> -->
+            </view>
+            <!-- <view class="desc">
+            <text>抽奖说明</text>
+            <view>1、参与方式为现场抽奖方式； </view>
+            <view>2、抽奖活动历时5天，即：5月3日至5月7日，活动时间为每天11:30—14:00</view>
+          </view> -->
+            <view class="Couplets">
+              窗花对联中国结，瓜籽糖饼美味菜，饺子红包新衣裳，舞龙舞狮放鞭炮，春节：中国味道。祝你新年快乐
+            </view>
+          </view>
+        </swiper-item>
+      </block>
+      <!-- 定时开奖 -->
+      <!-- <view class="red-packet {{level3==1?'top':level3==2?'center':'bottom'}}" bindtouchstart="bindMove3" animation="{{animationData3}}">
+        <view>
+          <image src="https://xcj.chaojichoujiang.com/Uploads/chunjie/index-packet.png" class="packet-image" />
+        </view>
+        <view class="packet-info">
+          <view class="packet-name">猜成语赢红包</view>
+          <text class="sponsor">纽麦得 赞助</text>
+          <view class="info">
+            <view>
+              <text>开始时间</text>
+              <text>2019-01-02 10:00:00 定时开奖</text>
+            </view>
+            <view>
+              <text>参与条件</text>
+              <text>春节红包</text>
+            </view>
+          </view>
+          <view class="desc">
+            <text>抽奖说明</text>
+            <view>1、参与方式为现场抽奖方式； </view>
+            <view>2、抽奖活动历时5天，即：5月3日至5月7日，活动时间为每天11:30—14:00</view>
+          </view>
+        </view>
+      </view> -->
+    </swiper>
+  </view>
+</view>
