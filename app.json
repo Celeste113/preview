@@ -6,7 +6,8 @@
     "pages/movableArea/movableArea",
     "pages/login/login",
     "pages/card/card",
-    "pages/newCard/newCard"
+    "pages/newCard/newCard",
+    "pages/barrage/barrage"
   ],
   "window": {
     "backgroundTextStyle": "light",

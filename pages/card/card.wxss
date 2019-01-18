@@ -76,6 +76,7 @@ page {
   top: -15rpx;
   left: 2.5%;
   transition: all 0.4s ease-in;
+  opacity: 0.98;
 }
 
 .bannerbox .bottom {
@@ -84,6 +85,7 @@ page {
   top: -30rpx;
   left: 7.5%;
   transition: all 0.4s ease-in;
+   opacity: 0.5;
 }
 
 .slide-image {

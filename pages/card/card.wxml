@@ -1,15 +1,4 @@
 <view id="index">
-  <!-- 通告栏 -->
-  <van-notice-bar mode="closeable" left-icon="/images/addImage.png" text="恭喜 微信昵称 赢取￥8.88春节红包" backgroundColor="#fff" color="#2d2e30" custom-class="my-notice-bar" />
-
-  <!-- 我要上首页 -->
-  <view class="action-btn clearfloat">
-    <view class="btn-group">
-      <text>我要上首页</text> |
-      <text>分享</text>
-    </view>
-  </view>
-
   <!-- 卡片 -->
   <view class="bannerList">
     <view class="bannerbox">

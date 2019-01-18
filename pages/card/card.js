@@ -20,9 +20,7 @@ Page({
     hidebox: {},
     move: true,
     first: true,
-
   },
-
 
   /**
    * 生命周期函数--监听页面加载
@@ -38,7 +36,7 @@ Page({
     wx.showLoading({
       title: "加载中",
     });
-    setTimeout(function() {
+    setTimeout(function () {
       wx.hideLoading()
     }, 1000)
     this.getlist();
@@ -47,7 +45,7 @@ Page({
   getlist: function() {
     let that = this,
       openid = wx.getStorageSync('openid'),
-      list = that.data.list,
+      list = [],
       data = {
         openid: openid,
       };
@@ -55,15 +53,16 @@ Page({
       url: 'https://xcj.chaojichoujiang.com/api/yearOrder',
       data: data,
       success: function(res) {
-        var dataList = res.data.data;
-        for (var temp of dataList) {
+        list = res.data.data;
+        for (var temp of list) {
           let startTime = app.Formate('yyyy-MM-dd hh:mm:ss', new Date(parseInt(temp.start_at) * 1000));
-          temp.startTime = startTime
+          temp.startTime = startTime;
+          console.log(temp)
         }
-        list = list.concat(dataList);
         that.setData({
           list: list
         })
+        console.log(list);
       }
     })
   },
@@ -143,8 +142,11 @@ Page({
     this.setData({
       list: list,
       bindId: '',
-      move: true
     });
+    let that=this;
+    setTimeout(function(){
+      that.setData({ move: true})
+    },200)
   },
   navTo: function() {
     wx.switchTab({

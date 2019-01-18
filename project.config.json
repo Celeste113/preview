@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": 0,
@@ -57,6 +57,12 @@
 					"id": -1,
 					"name": "newCard",
 					"pathName": "pages/newCard/newCard",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "弹幕  barrage",
+					"pathName": "pages/barrage/barrage",
 					"query": ""
 				}
 			]
