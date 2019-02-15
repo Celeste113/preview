@@ -11,7 +11,7 @@
   </view>
   <view class="item">
     <view class="title"> 竖向多滑块 </view>
-    <swiper interval="{{interval}}" circular vertical autoplay class="vertical-swiper" display-multiple-items='2' >
+    <swiper interval="{{interval2}}" circular vertical autoplay class="vertical-swiper" display-multiple-items='1'  previous-margin="{{topMargin}}">
       <block wx:for="{{4}}" wx:key='keys'>
         <swiper-item>
           <van-cell title="网易" value="2018-12-20" label="评价内容" border="{{ true }}" />

@@ -11,7 +11,8 @@ Page({
     leftMargin: '80rpx',
     rightMargin: '80rpx',
     currentIndex: 0,
-    interval2: '2000'
+    interval2: 1500,
+    topMargin:'190rpx',
   },
   handleChange: function (e) {
     this.setData({
