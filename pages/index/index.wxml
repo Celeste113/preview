@@ -1,6 +1,7 @@
 <view class="page">
   <van-cell-group>
     <van-cell title="banner新玩法" is-link url="/pages/banner/banner" />
-    <van-cell title="movable-area" is-link url="/pages/movableArea/movableArea" />
+    <van-cell title="卡片式切换" is-link url="/pages/card/card" />
+     <van-cell title="弹幕" is-link url="/pages/barrage/barrage" />
   </van-cell-group>
 </view>

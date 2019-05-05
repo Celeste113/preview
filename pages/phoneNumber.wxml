@@ -1,0 +1,3 @@
+<!--pages/phoneNumber.wxml-->
+<text>pages/phoneNumber.wxml</text>
+<button open-type='getPhoneNumber'>授权</button>

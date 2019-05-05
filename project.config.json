@@ -15,7 +15,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.4.2",
-	"appid": "wxf58ace18935e8ebb",
+	"appid": "wx0e8eb605832ef655",
 	"projectname": "preview",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 6,
 			"list": [
 				{
 					"id": 0,
@@ -64,6 +64,26 @@
 					"name": "弹幕  barrage",
 					"pathName": "pages/barrage/barrage",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "card",
+					"pathName": "pages/card/card",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "phone",
+					"pathName": "pages/phoneNumber/phoneNumber",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "phone",
+					"pathName": "pages/phoneNumber",
+					"query": "",
+					"scene": null
 				}
 			]
 		}
